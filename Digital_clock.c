@@ -25,7 +25,7 @@ int main(){
             minute=0;
             second=0;
         }
-        char d[20];
+        char d[2];
         if (hour<13){
             strcpy(d, "AM");
         }
