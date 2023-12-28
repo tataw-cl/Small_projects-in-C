@@ -30,6 +30,7 @@ int main() {
             break;
             case('^'):
             printf("%.2lf ^ %.2lf = %.2lf", num1,num2, pow(num1,num2));
+            break;
         default:
             printf("Error! Invalid operator for this calculator");
     }
