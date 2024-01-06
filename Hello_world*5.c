@@ -22,9 +22,8 @@ int main() {
 }
 
 
-Method 3: Using putchar() in a loop
+//Method 3: Using putchar() in a loop
 
-//
 #include <stdio.h>
 
 int main() {
