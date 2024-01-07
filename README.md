@@ -5,4 +5,7 @@ As always, feel free to contribute as well and do any neccessary changes. Just m
 #1 Digital_clock
 
 #2 Tic-tac-toe game in C
+
 #3 Hello world in 5 different ways 
+
+#4 Basic calculator program  in C
