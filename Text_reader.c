@@ -32,7 +32,7 @@ int main() {
 - We open the file "example.txt" in read mode using `fopen`.
 - We check if the file was opened successfully.
 - We read the file line by line using `fgets` in a loop.
-- We print each line to the console using `printf`.
-- Finally, we close the file using `fclose`.
+- We print each line to the console using 'printf'.
+- Finally, we close the file using 'fclose'.
 
-You can replace `"example.txt"` with the path to your desired text file.*/
+You can replace "example.txt" with the path to your desired text file.*/
