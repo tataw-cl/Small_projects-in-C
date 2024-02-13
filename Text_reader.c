@@ -35,4 +35,4 @@ int main() {
 - We print each line to the console using 'printf'.
 - Finally, we close the file using 'fclose'.
 
-You can replace "example.txt" with the path to your desired text file.*/
+You can replace "example.txt" with the path to your desired text file....*/
