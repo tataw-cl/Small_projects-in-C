@@ -27,6 +27,36 @@ void Ceasar_encrypt(char message[], int key){//function which will encrypt the m
    }
 }
 
+void Ceasar_decrypt(char message[], int key){//function to decrypt the encrypted message
+char cha;
+int i=0;
+while (message[i]!='\0')//loop to iterate through the message contents
+{
+    cha=message[i];
+    if (cha>='a'&&cha<='z')//check if the character is a lowercase letter
+    {
+        cha=cha-key;   //subtract the key from the character
+        if (cha<'a')
+        {
+            cha=(('z'+1)-('a'-cha));//wrap around the character
+             
+        }
+       message[i]=cha;//return the value after decryption to the message
+    }
+    else if (cha>='A'&&cha<='Z')   //check if the character is an uppercase letter
+    {
+        cha=cha-key;
+        if (cha<'A')
+        {
+            cha=(('Z'+1)-('A'-cha));
+        }
+        message[i]=cha;//return the value after decryption to the message
+    }
+    i++;//increment to next character
+}
+
+}
+
 //main function to test the encryption
 int main(){
     char mess[100];
@@ -38,6 +68,8 @@ int main(){
 
     Ceasar_encrypt(mess,key);
     printf("Encrypted messasge is: %s\n", mess);
+     Ceasar_decrypt(mess,key);
+     printf("Decrypted message is: %s\n", mess);
 
     return 0;
 }
