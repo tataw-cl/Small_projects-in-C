@@ -59,8 +59,8 @@ int main() {
     }
 
     printf("Tic Tac Toe\n");
-    printf("Player 1: X\n");
-    printf("Player 2: O\n");
+    printf("Player-1: X\n");
+    printf("Player-2: O\n");
     printf("Enter row and column numbers (0-2) to make a move.\n");
 
     // Game loop
