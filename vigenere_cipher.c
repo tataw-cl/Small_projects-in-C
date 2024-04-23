@@ -12,15 +12,21 @@ void vigenere_encrypt(char message[], char key[]){
         if (j==keylength)
         {
             j=0;
-        }
-        //Convert the characters to uppercase.
+        }//check if the message is lowercase
+        if (message[i]>='a'&& message[i]<='z')
+        {
+            //Convert the characters to uppercase.
         message[i]=toupper(message[i]);
         key[j]=toupper(key[j]);
-        //Encrypt the character
-        if (message[i]>='A'&& message[i]<='Z')
+        //Apply the vigenere encryption cipher algo formular
+      message[i]=((message[i]+key[j])%26)+'A';
+        //return the encrypted message
+        message[i]=tolower(message[i]);        }
+        else if (message[i]>='A'&& message[i]<='Z')
         {
+            key[j]=toupper(key[j]);
             // Applying the vigenere encryption cipher algo     for mular
-            message[i]=((message[i]+key[j]%26)+'A');//return the encrypted message
+            message[i]=((message[i]+key[j])%26)+'A';
                }
     }
     
@@ -36,17 +42,23 @@ void vigenere_Decrypt(char message[], char key[]){
         {
             j=0;
         }
-        //Convert the characters to uppercase.
+        if (message[i]>='a'&& message[i]<='z')
+        {
+            //Convert the characters to uppercase.
         message[i]=toupper(message[i]);
         key[j]=toupper(key[j]);
-        //Encrypt the character
-        if (message[i]>='A'&& message[i]<='Z')
+        //Apply the vigenere encryption cipher algo formular
+       message[i]=((((message[i]-key[j])+26)%26)+'A');
+        //return the encrypted message
+        message[i]=tolower(message[i]);        }
+        else if (message[i]>='A'&& message[i]<='Z')
         {
+            key[j]=toupper(key[j]);
             // Applying the vigenere encryption cipher algo formular
-            message[i]=(((message[i]-key[j]+26)%26)+'A');
+           message[i]=((((message[i]-key[j])+26)%26)+'A');
                }
     }
-}
+    }
 
 int main(){
     char mess[100];
