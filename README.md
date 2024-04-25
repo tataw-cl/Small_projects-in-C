@@ -6,6 +6,9 @@ As always, feel free to contribute as well and do any neccessary changes. Just m
 
 #2 Tic-tac-toe game in C
 
-#3 Hello world in 5 different ways 
+#3 Basic calculator program  in C
 
-#4 Basic calculator program  in C
+#4 Encryption algorithms
+   - Ceasar cipher
+   - Vigenere cipher
+   - Columnar transposition cipher
